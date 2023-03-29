@@ -1,10 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Brand } from 'src/app/models/brand';
 
 @Component({
   selector: 'app-brand',
   templateUrl: './brand.component.html',
   styleUrls: ['./brand.component.css']
 })
-export class BrandComponent {
-
+export class BrandComponent implements OnInit{
+  cars:Brand[] = [];
+  ngOnInit():void{}
 }
