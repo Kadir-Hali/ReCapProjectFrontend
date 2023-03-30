@@ -10,7 +10,7 @@ import { CarResponseModel } from 'src/app/models/carResponseModel';
 })
 export class CarComponent implements OnInit {
   cars: Car[] = [];
-  apiUrl = 'https://localhost:44319/api/cars/getall';
+  apiUrl = 'https://localhost:44319/api/cars/getcardetails';
   constructor(private httpClient: HttpClient) {}
   ngOnInit(): void {
     this.getCars();
