@@ -10,7 +10,7 @@ import { RentalResponseModel } from 'src/app/models/rentalResponseModel';
 })
 export class RentalComponent implements OnInit{
   rentals: Rental[] = [];
-  apiUrl = 'https://localhost:44319/api/rentals/getall';
+  apiUrl = 'https://localhost:44319/api/rentals/getrentaldetails';
   constructor(private httpClient: HttpClient) {}
   ngOnInit(): void {
     this.getRentals();
