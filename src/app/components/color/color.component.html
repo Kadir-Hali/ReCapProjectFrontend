@@ -1,4 +1,9 @@
-<div class="alert alert-success" role="alert" style="text-align: center;">
+<ul class="list-group topsize">
+  <li (click)="setCurrentColor(color)" *ngFor="let color of colors" [class]="getCurrentColorClass(color)">{{color.colorName}}</li>
+</ul>
+
+
+<!-- <div class="alert alert-success" role="alert" style="text-align: center;">
     COLORS
   </div>
 <table class="table">
@@ -11,4 +16,4 @@
     <tr *ngFor="let color of colors">
         <td>{{color.id}}</td>
         <td>{{color.colorName}}</td>
-</table>
+</table> -->
