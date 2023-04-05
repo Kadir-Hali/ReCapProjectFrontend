@@ -10,7 +10,7 @@ import { BrandService } from 'src/app/services/brand.service';
 export class BrandComponent implements OnInit {
   brands: Brand[] = [];
   currentBrand: Brand | null;
-  dataLoaded = false ;
+  brandLoaded: boolean = false;
   
   constructor(private brandService: BrandService) {}
   
@@ -21,7 +21,7 @@ export class BrandComponent implements OnInit {
   getBrands() {
     this.brandService.getBrands().subscribe((response) => {
       this.brands = response.data;
-      this.dataLoaded = true;
+      this.brandLoaded = true
     });
   }
   

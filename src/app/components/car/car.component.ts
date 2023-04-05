@@ -12,6 +12,7 @@ import { CarService } from 'src/app/services/car.service';
 })
 export class CarComponent implements OnInit {
   cars: Car[] = [];
+  carLoaded: boolean = false;
   brands: Brand[]=[];
   colors : Color[]=[];
   
