@@ -37,8 +37,7 @@ export class ColorComponent implements OnInit {
       return 'list-group-item';
     }
   }
-  reset(){
+  reset() {
     this.currentColor = null;
-
   }
 }
